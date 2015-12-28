@@ -7,4 +7,5 @@ angular.module('controllers.homeCtrl',[])
  //        loaduserSvc.remove(user);
  //    }
  	//alert('1');
+ 	// zhushi
 });
