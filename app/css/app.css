@@ -1,0 +1,270 @@
+/* app.css */
+@charset "UTF-8";
+
+/* global css */
+body,
+h1,h2,h3,h4,h5,h6 {
+  font-family:"Helvetica Neue", Arial,"Hiragino Sans GB", "Microsoft Yahei", sans-self;
+}
+ul li, ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a:hover{
+	text-decoration: none!important;
+}
+.clear{
+	clear: both;
+}
+.homePage{
+	background: #f7f7f7;
+	width: 100%;
+	height: 100%;
+}
+.topbar{
+	height: 60px;
+	line-height: 60px;
+	background: #1e89e0;
+}
+.logo{
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	margin-left: 40px;
+	float: left;
+	width: 100px;
+}
+.homePage .menu{
+	float: left;
+	width: 500px;
+	margin-left: 100px;
+}
+.homePage .menu li{
+	display: inline;
+	padding: 5px 20px;
+}
+.homePage .menu li a{
+	color: #fff;
+}
+.currentLocation{
+	padding: 8px;
+	border-bottom: 1px solid #ccc;
+}
+.mainPanel{
+	padding: 20px;
+	background: #fff;
+}
+.restaurantsCategories{
+	border: 1px solid #f1f1f1;
+	padding: 10px;
+}
+.restaurantsCategories .title{
+	width: 80px;
+	float: left;
+	padding: 3px;
+}
+.restaurantsCategories ul{
+	float: left;
+}
+.restaurantsCategories ul.first{
+	margin-bottom: 10px;
+}
+.restaurantsCategories ul li{
+	float: left;
+	padding: 3px 15px;
+}
+.restaurantsCategories ul li.active{
+	background: #0088dc;
+	border-radius: 3px;
+}
+.restaurantsCategories ul li.active a{
+	color: #fff;
+}
+.excavator-sort a{
+	margin-right: 20px;
+}
+.excavator-option{
+	float: right;
+}
+.place-tips{
+	background: #fffdee;
+	border: 1px solid #ffe4b9;
+	margin-top: 10px;
+	padding: 5px;
+}
+.place-tips .count{
+	color: #f63;
+    font-size: 20px;
+}
+.place-rstbox{
+	position: relative;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    margin-top: 20px;
+    background: #fff;
+}
+.rstblock{
+	width: 25%;
+	background: #fff;
+	height: 140px;
+	border-bottom: 1px #f5f5f5 solid;
+	float: left;
+}
+.rstblock:hover{
+	background: #f5f5f5;
+}
+.rstblock-logo{
+	padding: 20px;
+    color: #999;
+    text-align: center;
+    float: left;
+}
+.rstblock-logo-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.rstblock-content {
+    padding: 20px;
+}
+.rstblock-title{
+	font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.icon-star{
+	color: #ffc30c;
+}
+.rstblock-activity i{
+	padding: 4px;
+	background:#70bc46;
+	font-size: 12px;
+	font-style: normal;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.shopguide{
+	background: url(../img/sj_bj.jpg) no-repeat;
+	height: 142px;
+}
+.shopguide .title{
+	color: #fff;
+	font-size: 24px;
+	margin-left: 35px;
+	padding-top: 5px;
+}
+.detailPanel{
+	padding: 20px;
+}
+.shopnav li{
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+.shopnav{
+	float: left;
+}
+.sortnav{
+	float: left;
+	margin-left: 200px;
+}
+.sortnav li{
+	float: left;
+	padding: 0 20px;
+} 
+.viewStyle{
+	float: left;
+}
+.viewStyle li{
+	float: left;
+	padding: 2px 8px;
+	background: #0089dc;
+	margin: 0 3px;
+}
+.viewStyle li a{
+	color: #fff;
+}
+.shopmenu-nav{
+	padding: 10px;
+	border: 1px solid #f0f0f0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.shopmenu-nav a{
+	padding: 5px 15px;
+}
+.shopmenu-nav a.active{
+	background: #0089dc;
+	color: #fff;
+}
+.shopmenu-food{
+	position: relative;
+    float: left;
+    margin-right: 2%;
+    padding-right: 10px;
+    width: 48%;
+    margin-bottom: 12px;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    min-height: 102px;
+    padding-bottom: 10px;
+}
+.shopmenu-food img{
+	float: left;
+    margin-right: 14px;
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.shopmenu-food .addItem{
+	float: right;
+	padding: 5px 10px;
+	background: #0089dc;
+	color: #fff;
+}
+.shop-cartbasket{
+	position: fixed;
+	right: 0;
+	bottom:0;
+	width: 300px;
+	min-height: 220px;
+	box-shadow: 2px 2px 3px #ccc;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-top: 3px solid #0089dc;
+	background: #fff;
+	z-index: 999;
+}
+.shopCartList li input{
+	padding: 0px;
+	width:25px;
+	height: 25px;
+}
+.cartfooter{
+	background: #555;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin-left: -10px;
+	padding-left: 15px;
+}
+.cartfooter a{
+	background: #fdda33;
+	padding: 5px 10px;
+	color: #222;
+	text-decoration: none;
+}
+.cartfooter span{
+	color: #ccc;
+}

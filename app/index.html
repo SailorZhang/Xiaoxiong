@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp" ng-strict-di>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div ui-view></div>
+  <script src="lib/angular.js"></script>
+  <script src="lib/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <!-- services -->
+  <script src="services/loginSvc.js"></script>
+  <script src="services/loaduserSvc.js"></script>
+  <!-- directives -->
+  <script src="directives/appVersionDir.js"></script>
+  <script src="directives/appCalendarHeader.js"></script>
+  <!-- controllers -->
+  <script src="controller/flashCtrl.js"></script>
+  <script src="controller/registerCtrl.js"></script>
+  <script src="controller/loginCtrl.js"></script>
+  <script src="controller/homeCtrl.js"></script>
+  <script src="controller/userDetailCtrl.js"></script>
+</body>
+</html>
