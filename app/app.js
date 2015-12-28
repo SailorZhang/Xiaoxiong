@@ -6,11 +6,8 @@ var app = angular.module('MyApp',[
 	'ui.router',
 	'directives',
 	'services.home',
-	'controllers.flashCtrl',
-	'controllers.registerCtrl',
-	'controllers.loginCtrl',
 	'controllers.homeCtrl',
-	'controllers.userDetailCtrl',
+	'controllers.homeDetailCtrl',
 ])
 .config(function($stateProvider, $urlRouterProvider){
 	$urlRouterProvider.otherwise('/home');
@@ -23,6 +20,6 @@ var app = angular.module('MyApp',[
 		.state('user-detail',{
 			url:'/home/001',
 			templateUrl:'views/user-detail.html',
-			controller:'userDetailCtrl'	
+			controller:'homeDetailCtrl'	
 		})
 })
