@@ -1,11 +1,9 @@
 'use strict';
 
-
-// Declare app level module which depends on views, and components
 var app = angular.module('MyApp',[
 	'ui.router',
-	'directives',
-	'services.home',
+	//'directives',
+	//'services.home',
 	'controllers.homeCtrl',
 	'controllers.homeDetailCtrl',
 ])
@@ -15,7 +13,7 @@ var app = angular.module('MyApp',[
 		.state('home',{
 			url:'/home',
 			templateUrl:'views/home.html',
-			controller:'homeCtrl'	
+			controller:'homeCtrl'
 		})
 		.state('user-detail',{
 			url:'/home/001',

@@ -1,16 +1,11 @@
 'use strict';
-
-angular.module('services.home',[])
-
-.factory('homeSvc', function($http, $q) {
+app.factory('homeSvc', function($http) {
   var homeSvc = {};
   homeSvc.loadData = function(){
-     return $http.get('https://randomuser.me/api/?results=10').then(function(data){
-      return data.data.results;
-    })
+    return $http.get('data/homeData.json').success(function(data){
+            //return data.productSearchPage;
+            return data.productSearchPage;
+        })
   }
   return homeSvc;
 });
-
-
-
